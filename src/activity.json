@@ -1,0 +1,38 @@
+{
+  "key": "2022FirstPost",
+  "title": "掘金日新计划 ｜ 12月更文挑战",
+  "docLink": "https://juejin.cn/post/7167294154827890702",
+  "categories": ["前端", "后端", "Android", "iOS", "人工智能", "开发工具"],
+  "startTimeStamp": 1668960000000,
+  "endTimeStamp": 1672416000000,
+  "signSlogan": "[点击查看活动详情](https://juejin.cn/post/7167294154827890702",
+  "signLink": "https://juejin.cn/post/7167294154827890702",
+  "wordCount": 500,
+  "rules": [
+    {
+      "title": "进度追踪",
+      "rewards": [
+        {
+          "name": "第一关",
+          "days": 7
+        },
+        {
+          "name": "第二关",
+          "days": 14
+        },
+        {
+          "name": "第三关",
+          "days": 21
+        },
+        {
+          "name": "全勤奖",
+          "days": 32
+        },
+        {
+          "name": "劳模奖",
+          "days": 45
+        }
+      ]
+    }
+  ]
+}
