@@ -1,5 +1,5 @@
 {
-  "@name": "juejin-post-tracker-12",
+  "@name": "juejin-post-tracker-1.3",
   "@include": "https://juejin.cn/user/*",
   "@run-at": "document-end",
   "@require": "https://code.jquery.com/jquery-3.6.0.min.js",

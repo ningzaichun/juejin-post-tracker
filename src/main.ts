@@ -38,23 +38,10 @@ async function fetch(userId: string) {
       .map(({ id }) => fetchArticleDetail(id))
   );
 
-  console.log("articleDetails===>", articleDetails);
   articleDetails.forEach(({ data }) => {
     const { article_info } = data;
     const { article_id, mark_content, mtime } = article_info;
     const content = nm(mark_content).trim();
-
-    console.log(" content=====>", content);
-    console.log(" signSlogan=====>", signSlogan);
-    console.log(
-      " content.includes(signSlogan)===>",
-      content.includes(signSlogan)
-    );
-    console.log(
-      "new RegExp(`${signLink}((?:/|$)?)`).test(content),===>",
-      new RegExp(`${signLink}((?:\/|$)?)`).test(content)
-    );
-    console.log("countWords(mark_content),===>", countWords(mark_content));
     articleContentMap.set(article_id, {
       sloganFit: content.includes(signSlogan),
       linkFit: new RegExp(`${signLink}((?:\/|$)?)`).test(content),
@@ -175,9 +162,9 @@ const plugin = {
     ) {
       try {
         const articles = await fetch(myUserId);
-        console.log("articles====>",articles);
         const stats = statistics(articles);
         render(stats);
+        console.log("sucuess");
       } catch (error) {
         if (error instanceof Error) {
           renderErrorMessage(error);
